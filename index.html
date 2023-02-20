@@ -304,114 +304,18 @@
                                 color: orange;
                             }
                         </style>
-                        <p class="body-text" style="color:#fec540;font-size: 20px;">4.6/5 <span style="color: white;">(965 ratings)</span></p><br>
+                        <p class="body-text" style="color:#fec540;font-size: 20px;">4.6/5 <span style="color: white;">(965 ratings)</span></p>
                         <div class="wrapper">
-                            <div class="">
-                                <div class="countdown-container">
-                                    <div>
-                                        <p id="days" class="big-text"></p>
-                                        <span >Days</span>
-                                    </div>
-                                    <div>
-                                        <p id="hours" class="big-text"></p>
-                                        <span >Hours</span>
-                                    </div>
-                                    <div>
-                                        <p id="min" class="big-text"></p>
-                                        <span >Min</span>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <style>
-                            .overlay{
-                                position:absolute;
-                                top:0;
-                                left:0;
-                                right:0;
-                                bottom:0;
-                                width:50%;
-                                height:40%;
-                                z-index:-1;
-                            }
-                            .countdown-container{
-                                display:flex;
-                            }
-                            .big-text{
-                                font-size:2.2rem;
-                            }
-                            .title{
-                                margin:10px;
-                                text-align:center;
-                                width:50%;
-                                letter-spacing:2px;
-                                font-size: 3rem;
-                                line-height: 5.5rem;
-                            }
-                            .title span{
-                                display:block;
-                                font-size:6rem;
-                                letter-spacing:2rem;
-                            }
                             .wrapper{
                                 display:flex;
                                 align-items:center;
                                 justify-content:center;
                                 flex-wrap: wrap;
-                                min-height:20vh;
-                            }
-                            .countdown-container > div{
-                                margin:0 0.5rem;
-                                text-align: center;
-                                border:2px solid #fff;
-                                padding:0px 20px;
-                                border-radius: 12px;
-                                box-shadow: 0px 2px 10px orange;
-                                box-sizing: border-box;
-                                min-width:110px;
-                            }
-                            @media (max-width:992px){
-                                .countdown-container > div{
-                                margin:0 1rem;
-                                }
-                            }
-                            @media (max-width:767px){
-                                .countdown-container{
-                                flex-wrap: wrap;
-                                }
-                                .countdown-container > div{
-                                margin:1rem auto;
-                                max-width:40px;
-                                }
-                                .title{
-                                font-size: 1.5rem;
-                                line-height: 3.5rem;
-                                margin:10px 0px;
-                                }
-                                .title span{
-                                font-size: 1rem;
-                                letter-spacing: 1rem;
-                                }
+                                min-height:13vh;
                             }
                         </style>
-                        <script>
-                            let daysItem = document.querySelector("#days");
-                            let hoursItem = document.querySelector("#hours");
-                            let minItem = document.querySelector("#min");
-                            let countDown = () => {
-                            let futureDate = new Date("01 March 2023");
-                            let currentDate = new Date();
-                            let myDate = futureDate - currentDate;
-                            let days = Math.floor(myDate / 1000 / 60 / 60 / 24);
-                            let hours = Math.floor(myDate / 1000 / 60 / 60) % 24;
-                            let min = Math.floor(myDate / 1000 / 60) % 60;
-                            daysItem.innerHTML = days;
-                            hoursItem.innerHTML = hours;
-                            minItem.innerHTML = min;
-                            }
-                            countDown()
-                            setInterval(countDown, 1000)
-                        </script>
                         <a href="https://imjo.in/mtCY4s" class="cta-cc payment-button w-inline-block" style="font-size: 30px; color: white;">
                             <div class="cc-button-text">Register Now</div>
                             <div style="transform: translate3d(38.5979vw, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(25deg, 0deg); transform-style: preserve-3d; will-change: transform;" class="glare"></div>
