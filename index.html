@@ -106,12 +106,12 @@
         form.addEventListener('submit', e => {
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            .then(response => alert("Thanks for Contacting us ! You'll get the PDF in your inbox in one buisness day.."))
             .catch(error => console.error('Error!', error.message))
         })
     </script>
     <!-- End of Popup Content -->
-    
+
     <div class="page-wrapper">
         <main class="main-wrapper premium" style="background-image: linear-gradient(blue,cyan,red);">
             <div class="persistent-cta-mobile">
