@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Event snippet for Wikipedia workshop purchase conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-11030829943/IQPcCJGYmJ0YEPe29Isp',
+      'transaction_id': '',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
     <title>Wikipedia Workshop</title>
     <meta charset="utf-8">
     <meta name="description" content="Wikipedia workshop, learn about how to write wikipedia in one hour from top wikipedians.">
