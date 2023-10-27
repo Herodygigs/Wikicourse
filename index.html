@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Event snippet for Wikipedia workshop purchase conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-11030829943/IQPcCJGYmJ0YEPe29Isp',
+      'transaction_id': '',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
     <title>Wikipedia Workshop</title>
     <meta charset="utf-8">
     <meta name="description" content="Wikipedia workshop, learn about how to write wikipedia in one hour from top wikipedians.">
@@ -127,7 +145,7 @@
                     <div class="price-container-mcta">
                         <div class="flex">
                             <div class="price2">₹</div>
-                            <div class="price2 source-price">449</div>
+                            <div class="price2 source-price">799</div>
                         </div>
                         <div class="text-color-white w-condition-invisible"><em>or</em></div>
                     </div>
@@ -140,7 +158,7 @@
                     <div style="font-size:17px; color:red;">Few hours left at this price !</div>
                     <div class="desktop-cta-text w-condition-invisible">100% refund on<br>100% completion</div>
                 </div>
-                <a href="https://imjo.in/mtCY4s" class="cta-cc mobile payment-button w-inline-block" style="background-color: blue; font-size: 23px; color: white;" target="_blank">
+                <a href="https://www.udemy.com/course/advanced-wikipedia-master-class-became-a-wikipedia-pro/" class="cta-cc mobile payment-button w-inline-block" style="background-color: blue; font-size: 23px; color: white;" target="_blank">
                     <div class="cc-button-text">Register Now</div>
                 </a>
             </div>
@@ -148,7 +166,7 @@
                 <div class="flex pricing">
                     <div class="flex">
                         <div class="pricing-cta">₹</div>
-                        <div class="pricing-cta">449</div>
+                        <div class="pricing-cta">799</div>
                     </div>
                     <div class="flex">
                         <div class="pricing-cta is-strikethrough">₹</div>
@@ -158,7 +176,7 @@
                 </div>
                 <div class="margin-horizontal margin-small w-condition-invisible"><em>or</em></div>
                 <div class="desktop-cta-text w-condition-invisible">100% refund on 100% completion</div>
-                <a href="https://imjo.in/mtCY4s" class="cta-cc is-desktop-cta payment-button w-inline-block" style="background-color: blue; font-size: 30px; color: white;" target="_blank">
+                <a href="https://www.udemy.com/course/advanced-wikipedia-master-class-became-a-wikipedia-pro/" class="cta-cc is-desktop-cta payment-button w-inline-block" style="background-color: blue; font-size: 30px; color: white;" target="_blank">
                     <div style="transform: translate3d(38.5979vw, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(25deg, 0deg); transform-style: preserve-3d; will-change: transform;" class="glare"></div>
                     <div class="cc-button-text">Register Now</div>
                 </a>
@@ -355,12 +373,12 @@
                 <div class="header-component">
                     <div class="content-left">
                         <marquee direction="left">
-                            <h3 style="color:orange;">On registering , You will get an email from our team regarding the next available slots.</h3><br><br>
+                            <h3 style="color:orange;">On registering , You will be redirected to Udemy</h3><br><br>
                         </marquee>
                         <img src="http://drive.google.com/uc?export=view&id=1RQNI1Khnhj4Z-YSKj3F3Z3ZouoT3bmC0" loading="lazy" alt="Herody Logo" class="logo" width="75" height="95">
                         <div>
                             <div class="headline w-richtext">
-                                <h1>I will make you to learn <span>"1 lakh"</span> every month by Wikipedia freelancing</h1>
+                                <h1>I will make you to earn <span>"1 lakh"</span> every month by Wikipedia freelancing</h1>
                             </div>
                             <style>
                                 .headline span {
@@ -412,7 +430,7 @@
                                 min-height:13vh;
                             }
                         </style>
-                        <a href="https://imjo.in/mtCY4s" class="cta-cc payment-button w-inline-block" style="font-size: 30px; color: white;">
+                        <a href="https://www.udemy.com/course/advanced-wikipedia-master-class-became-a-wikipedia-pro/" class="cta-cc payment-button w-inline-block" style="font-size: 30px; color: white;" target="_blank">
                             <div class="cc-button-text">Register Now</div>
                             <div style="transform: translate3d(38.5979vw, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(25deg, 0deg); transform-style: preserve-3d; will-change: transform;" class="glare"></div>
                         </a>
@@ -488,7 +506,8 @@
         <div class="section-premium-template">
             <div class="headline-container" style="background-color: white;">
                 <div class="container-tiny">
-                    <h2 class="section-headline">Who is this Workshop for?</h2>
+                    <!-- <p class="section-headline">Who is this Advanced Master Class for ?</p> -->
+                    <p style="font-size: 33.5px; font-weight:600;">Who is this Advanced Master Class for ?</p>
                 </div>
             </div>
             <div class="content-container" style="background-image: linear-gradient(blue,cyan);">
@@ -596,7 +615,7 @@
                     <div class="margin-bottom margin-small">
                         <h2 class="section-headline">Before you ask!</h2>
                     </div>
-                    <div>Yes! You will be certified for this Workshop on submission of your assignments.</div>
+                    <div>Yes! You will be certified for this advanced Master Class on submission of your assignments.</div>
                 </div>
             </div>
             <div class="content-container">
@@ -643,12 +662,12 @@
                         </div>
                     </div>
                     <div class="ent-faq-answer blank" style="height: 0px; background-color: white;">
-                        <div class="pub-faq-open" style="font-size: 25px;">It's a one hour online workshop<br></div>
+                        <div class="pub-faq-open" style="font-size: 25px;">It's a one hour recorded class.<br></div>
                     </div>
                 </div>
                 <div class="pod-faq ui">
                     <div data-w-id="2b8a92e7-a093-3df4-7423-4bd64ff836d7" class="pub-faq-question">
-                        <div class="faq-question" style="font-size: 25px;">When is the Workshop?</div>
+                        <div class="faq-question" style="font-size: 25px;">When is the Advanced Master Class ?</div>
                         <div class="faq-chevron w-embed">
                             <svg width="100%" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 1.5L9.49991 9.5L18 1.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -656,7 +675,7 @@
                         </div>
                     </div>
                     <div class="ent-faq-answer blank" style="height: 0px; background-color: white;">
-                        <div class="pub-faq-open" style="font-size: 25px;">You will receive an email regarding the date and time<br></div>
+                        <div class="pub-faq-open" style="font-size: 25px;">You will receive an email regarding the date and time.<br></div>
                     </div>
                 </div>
                 <div class="pod-faq ui">
@@ -669,7 +688,7 @@
                         </div>
                     </div>
                     <div class="ent-faq-answer blank" style="height: 0px; background-color: white;" >
-                        <div class="pub-faq-open" style="font-size: 25px;">Yes! You will receive a certificate on completion of the workshop.<br></div>
+                        <div class="pub-faq-open" style="font-size: 25px;">Yes! You will receive a certificate on completion of the course.<br></div>
                     </div>
                 </div>
                 <div class="pod-faq">
@@ -682,7 +701,7 @@
                         </div>
                     </div>
                     <div class="ent-faq-answer blank" style="height: 0px; background-color: white;">
-                        <div class="pub-faq-open" style="font-size: 25px;">You dont need a refund, as you feel it worth doing.<br></div>
+                        <div class="pub-faq-open" style="font-size: 25px;">You don't need a refund, as you feel it worth doing.<br></div>
                     </div>
                 </div>
                 <div class="pod-faq">
@@ -695,7 +714,7 @@
                         </div>
                     </div>
                     <div class="ent-faq-answer blank" style="height: 0px; background-color: white;">
-                        <div class="pub-faq-open" style="font-size: 25px;">Online<br></div>
+                        <div class="pub-faq-open" style="font-size: 25px;">Recorded class on udemy.<br></div>
                     </div>
                 </div>
             </div>
